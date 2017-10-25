@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ex02</title>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+<h1>JS練習03 オブジェクト</h1>
+
+<script>
+var obj1 = {
+	name:'yama',
+	age:40,
+	job:'web engineer'
+};
+//
+console.log('オブジェクトの値へはドットシンタックスでアクセス');
+console.log('My name is ' + obj1.name);
+console.log(obj1.age + ' year\'s old');
+console.log('My job is a ' + obj1.job);
+
+console.log('--------------ループ(走査)----------------');
+for(var k in obj1){
+	console.log(k + ':' + obj1[k]);
+}
+
+
+var obj2 = {
+	comments : [
+		{
+			user : 'yama',
+			text : '眠い？'
+		},
+		{
+			user : 'higa',
+			text : '眠いよー'
+		},
+		{
+			user : 'taka',
+			text : '眠いんかい!!'
+		}
+	]
+};
+console.log(obj2);
+
+
+
+
+</script>
+
+</body>
+</html>

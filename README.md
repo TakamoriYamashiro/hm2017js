@@ -36,3 +36,23 @@ var c = a+b;
 console.log(c); // int型同士で加算され 36と出力される
 ```
 
+## 配列
+
+配列の使い方。
+
+```
+var arr1 = [100,23,444];
+console.log(arr1);
+
+var arr2 = ['apple','orange','pen'];
+console.log(arr2);
+
+var arr3 = ['apple',30,'human'];
+console.log(arr3);
+
+```
+
+
+
+
+
