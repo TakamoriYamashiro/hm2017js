@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ex01</title>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+<h1>JS練習01</h1>
+<p>
+	JavaScirptはscriptタグに書く
+</p>
+<p>
+	だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。
+</p>
+<p>
+	だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。
+</p>
+<p>
+	だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。
+</p>
+<p>
+	だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。
+</p>
+<p>
+	だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。
+</p>
+<p>
+	だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。これは仮入力のためのだみーてきすとです。全く意味はございません。だみーてきすとです。
+</p>
+
+<input id="btn" type="submit" value="ボタン">
+
+<script>
+function test(){
+
+	var result = 43214*23423;
+
+	//debugger;
+
+}
+
+var a = parseInt('12');
+var b = 24;
+var c = a+b;
+console.log(c);
+console.log(c);
+
+test();
+
+window.addEventListener('scroll',function(event){
+	console.log(event);
+});
+var isPressSpace = false
+window.addEventListener('keydown',function(event){
+	if(event.code=='Space'){
+		isPressSpace = true;
+	}	
+});
+window.addEventListener('keyup',function(event){
+	if(event.code=='Space'){
+		isPressSpace = false;
+	}	
+});
+
+setInterval(function(){
+	console.log(isPressSpace);
+},1000);
+
+
+var btn = document.getElementById('btn');
+btn.addEventListener('click',function(event){
+	if(event.altKey){
+		console.log('altおされてる');
+	}
+	if(isPressSpace){
+		console.log('spaceおされてる');	
+	}
+	console.log(event);
+});
+console.log(btn);
+
+</script>
+
+</body>
+</html>
