@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>問題01</title>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+<h1>次のli要素をJavaScriptで10個複製しなさい</h1>
+
+<ul id="list">
+	<li class="item">この要素を10個複製</li>
+</ul>
+
+<script>
+var list = document.getElementById('list');
+var output = '';
+for(var i=0; i<10; i++){
+	output += list.innerHTML;
+}
+list.innerHTML = output;
+</script>
+
+</body>
+</html>
