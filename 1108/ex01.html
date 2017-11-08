@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ex01</title>
+	<meta name="viewport" content="width=device-width">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+<h1 id="midashi">title</h1>
+
+<script>
+var $el = $("#midashi");
+// var el = document.getElementById('midashi');
+console.log($el);
+// console.log(el);
+$el.html('タイトル');
+// el.innerHTML = "たいとる";
+$el.css('color','white');
+// el.style.color = "white";
+// el.style.fontSize = "40px";
+$el.css('background-color','red');
+// el.style.backgroundColor = "red";
+// font-size
+// fonr-family
+// background-color
+$el
+	.slideUp(200)
+	.slideDown(1000)
+	.fadeOut(500);
+
+</script>
+
+
+</body>
+</html>
